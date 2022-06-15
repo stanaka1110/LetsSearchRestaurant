@@ -1,25 +1,37 @@
 import './App.css';
-import { Grid } from '@material-ui/core';
+import { Button, Grid, styled} from '@mui/material';
 import Header from './components/Header';
-const App=() => {
+import GMap from './components/GMap'
+import SelectCard from './components/SelectCard';
+
+const CardGrid = styled(Grid)({
+  height: '20px'
+});
+const App = () => {
   return (
-    <Grid container direction="column">
-      <Grid item>
-        <Header />
-      </Grid>
-      <Grid item container>
-        <Grid sm={2} />
-        <Grid xs={12} sm={8}>
-          item2item2item2item2item2item2item2item2item2item2item2item2
-          item2item2item2item2item2item2item2item2item2item2item2item2
-          item2item2item2item2item2item2item2item2item2item2item2item2
-          item2item2item2item2item2item2item2item2item2item2item2item2
-          item2item2item2item2item2item2item2item2item2item2item2item2
+    <div>
+      <Grid container direction={"column"}>
+        <Grid item>
+          <Header />
         </Grid>
-        <Grid sm={2} />
+        <Grid container spacing={2}>
+          <Grid item xs={4}>
+            <Button>
+              現在地
+            </Button>
+          </Grid>
+          <Grid item xs={4}>
+            <SelectCard />
+          </Grid>
+          <Grid item xs={4}>
+            <SelectCard />
+          </Grid>
+        </Grid>
+        <Grid>
+          <GMap />
+        </Grid>
       </Grid>
-    </Grid>
+    </div>
   );
 }
-
 export default App;

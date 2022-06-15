@@ -1,20 +1,17 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, makeStyles} from '@material-ui/core';
+import { AppBar, Toolbar, Typography} from '@mui/material';
 
-const useStyles = makeStyles(() => ({
-    typographyStyles: {
-        fontSize: 24
-    }
-  }));
-
-const Header=() =>{
-    const classes = useStyles();
+const Header = () => {
     return (
-        <AppBar position="static">
-            <Toolbar>
-                <Typography className={classes.typographyStyles}>Let's Search Restaurant</Typography>
-            </Toolbar>
-        </AppBar>
+        <div>
+            <AppBar position="static">
+                <Toolbar>
+                    <Typography variant="h6" color="inherit">
+                        Let's Search Restaurant
+                    </Typography>
+                </Toolbar>
+            </AppBar>
+        </div>
     );
 }
 
