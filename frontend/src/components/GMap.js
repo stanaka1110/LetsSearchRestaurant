@@ -1,21 +1,25 @@
-import {useContext} from 'react';
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import { React } from 'react';
+import { GoogleMap, LoadScript , Marker} from "@react-google-maps/api";
 
 const containerStyle = {
-    height: "100vh",
-    width: "100%",
-  };
-const center = {
-    lat:2,
-    lng:3
+  height: "100vh",
+  width: "100%",
 };
 
-const GMap = () => {
+
+const GMap = ({lat, lng}) => {
+  const  center = {
+    lat: lat,
+    lng: lng,
+  };
   return (
-    <LoadScript googleMapsApiKey="AIzaSyBW6-lCWyiiCdDlehATcQOndaNmUuKDEpg">
-      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={17}>
-      </GoogleMap>
-    </LoadScript>
+    <div>
+      <LoadScript googleMapsApiKey="AIzaSyBW6-lCWyiiCdDlehATcQOndaNmUuKDEpg">
+        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={17}>
+        <Marker name='test' position={center}/>
+        </GoogleMap>
+      </LoadScript>
+    </div>
   );
 };
 
