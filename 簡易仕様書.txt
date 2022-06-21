@@ -1,0 +1,65 @@
+# 簡易仕様書
+
+### 作者
+田中駿
+### アプリ名
+Let's Search Restaurant
+
+#### コンセプト
+住所や場所でレストランを検索、MAPでレストランの位置を表示するアプリ
+
+#### こだわったポイント
+住所や場所から検索できるようにしました。
+また、GoogleMapAPIを利用してレストランの位置をMAP上に表示するようにしました。
+
+### 該当プロジェクトのリポジトリ URL（GitHub,GitLab など Git ホスティングサービスを利用されている場合）
+https://github.com/stanaka1110/LetsSearchRestaurant.git
+
+## 開発環境
+### 開発環境
+macOS Monterey　バージョン12.3.1
+Node.js v16.15.0
+yarn 1.22.18
+
+### 開発言語
+Python 3.9.12
+JavaScript
+
+## 動作対象端末・OS
+### 動作対象OS
+macOS Monterey　バージョン12.3.1
+Chrome バージョン: 102.0.5005.115（Official Build） （arm64）
+
+## 開発期間
+10日間
+
+## アプリケーション機能
+
+### 機能一覧
+- 現在地レストラン検索：Geolocation APIから現在地を取得し、緯度経度からホットペッパーグルメサーチAPIを使用してレストラン一覧を取得する。
+- 場所・住所レストラン検索：GeoCodingAPIを利用して、場所・住所から緯度経度を取得し、緯度経度からホットペッパーグルメサーチAPIを使用してレストラン一覧を取得する。
+- 地図アプリ連携：飲食店の所在地を地図アプリに連携する。
+
+### 画面一覧
+- 検索画面 ：条件を指定してレストランを検索する。
+- 一覧画面 ：検索結果の飲食店を一覧表示する。
+
+### 使用しているAPI,SDK,ライブラリなど
+- ホットペッパーグルメサーチAPI
+- Geocoding API
+- Maps JavaScript API
+- react 18.1.0
+- axios 0.27.2
+- geolib 3.3.3
+- @mui/material 5.8.4
+- react-geocode 0.2.3
+- @react-google-maps/api 2.12.0
+- Django 4.0.5
+- djangorestframework 3.13.1
+- python-dotenv 0.20.0
+
+### アドバイスして欲しいポイント
+ReactのライブラリであるaxiosでのホットペッパーグルメサーチAPIがうまく動かなかったので、
+個人的に理解のあるPython、DjangoでホットペッパーグルメサーチAPI利用して、レストラン一覧を取得しそれを取得しました。
+それ以外の解決策があればアドバイスがほしいです。
+また、GoogleMapAPIを利用して、MAPを表示しましたが、zoom倍率が何故か変わらないという問題があります。その点の解決策があればアドバイスがほしいです。
