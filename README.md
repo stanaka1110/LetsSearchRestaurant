@@ -17,5 +17,10 @@ $python manage.py runserver
 ## 検索画面
 ![検索画面](https://user-images.githubusercontent.com/31602762/174853326-ef8f61f1-e801-4d7e-b7a9-5748882365c5.png)
 
+- 現在地から
+現在地付近のレストラン一覧を取得するボタン
+- 地名・住所から
+地名・住所から得られた緯度経度から得られた位置情報からレストラン取得するボタン
+
 ## レストラン一覧画面
 ![レストラン一覧画面](https://user-images.githubusercontent.com/31602762/174853812-83e41160-4ff8-404f-a2e5-19dae1537a5f.png)
