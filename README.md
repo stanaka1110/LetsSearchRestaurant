@@ -38,7 +38,7 @@ $python manage.py runserver
 ホットペッパーグルメサーチAPIから得られたレストラン情報を表示する部分です。
 ![レストラン一覧](https://user-images.githubusercontent.com/31602762/174878265-10399cf0-7c86-4244-b8cc-6c2df1a82899.png)
 
-
+![スライダー使用](https://user-images.githubusercontent.com/31602762/174886389-496bd3f5-45ab-4256-84f4-ef467130b397.gif)
 クリックすると以下のように表示します。
 ![レストラン詳細](https://user-images.githubusercontent.com/31602762/174878482-fb25cab0-91f2-4ace-92dd-dec4b5b68573.png)
 
