@@ -10,7 +10,7 @@ $yarn start
 $cd backend/
 $python manage.py runserver
 ```
-3. ブラウザでhttp://localhost:3000/にアクセスする。
+3. ブラウザで http://localhost:3000/ にアクセスする。
 
 --- 
 
