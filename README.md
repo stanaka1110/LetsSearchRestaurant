@@ -21,6 +21,7 @@ $python manage.py runserver
 現在地付近のレストラン一覧を取得するボタンです。
 - 地名・住所から
 地名・住所から得られた緯度経度から得られた位置情報からレストラン取得するボタンです。
+
 地名・住所検索画面は以下のとおりです。
 ![地名・住所検索画面](https://user-images.githubusercontent.com/31602762/174879256-462a8492-0683-415e-9bcd-3c44dcc01545.png)
 
@@ -36,6 +37,8 @@ $python manage.py runserver
 - レストラン一覧
 ホットペッパーグルメサーチAPIから得られたレストラン情報を表示する部分です。
 ![レストラン一覧](https://user-images.githubusercontent.com/31602762/174878265-10399cf0-7c86-4244-b8cc-6c2df1a82899.png)
+
+
 クリックすると以下のように表示します。
 ![レストラン詳細](https://user-images.githubusercontent.com/31602762/174878482-fb25cab0-91f2-4ace-92dd-dec4b5b68573.png)
 
