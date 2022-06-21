@@ -1,10 +1,13 @@
 import requests
 import json
+import os
+from dotenv import load_dotenv
+
 
 def getRestrauntList(lat, lng):
-    HOTPEPPER_API_KEY = '690acc86d576acaa'
-    api_key = HOTPEPPER_API_KEY
-
+    load_dotenv() 
+    api_key = os.environ.get("HOTPEPPER_API_KEY")
+    print(os.environ['HOTPEPPER_API_KEY'])
     query = {
         'key': api_key,
         'lat': float(lat),
@@ -31,8 +34,5 @@ def getRestrauntList(lat, lng):
 
     return ret_list
 
-
-
-
 if __name__ == '__main__':
-    print(getRestrauntList('35.0195231','135.9852349'))
+    print(getRestrauntList(35.0195347, 135.9852246))
