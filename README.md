@@ -42,5 +42,8 @@ $python manage.py runserver
 クリックすると以下のように表示します。
 ![レストラン詳細](https://user-images.githubusercontent.com/31602762/174878482-fb25cab0-91f2-4ace-92dd-dec4b5b68573.png)
 
+## 変更！
+以下のようにレストラン一覧画面表示を変更しました。
+![レストラン一覧更新](https://user-images.githubusercontent.com/31602762/174954830-2f5138c1-686f-4009-bd2c-e1c9ad3b0363.png)
 
 
