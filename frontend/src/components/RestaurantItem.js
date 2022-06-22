@@ -1,4 +1,4 @@
-import {Button, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions} from '@mui/material';
+import {Button, Dialog, DialogTitle, DialogContent, DialogContentText, DialogActions, Typography, Card} from '@mui/material';
 import {useState} from 'react';
 
 export const RestaurantItem = ({data}) =>{
@@ -6,11 +6,15 @@ export const RestaurantItem = ({data}) =>{
     console.log(data);
     return(
         <div>
-            <Button onClick={() => setOpen(true)}>
-              <img src={data.logo_image} alt="ロゴ画像"/>
-                {data.name}
-            </Button>
-            
+            <Card>
+                <Button onClick={() => setOpen(true)}>
+                    <img src={data.logo_image} alt="ロゴ画像" />
+                    {data.name}
+                </Button>
+                <Typography>
+                    {data.access}
+                </Typography>
+            </Card>
             <Dialog open={open} onClose={()=>setOpen(false)}>
                 <DialogTitle>{data.name}</DialogTitle>
                 <DialogContent>
